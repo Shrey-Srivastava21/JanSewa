@@ -2,7 +2,7 @@
 #### https://jansewa.vercel.app/
 
  - don't forget to leave a star ! :)
- - 
+
 ## Features
 
 - SignIn / SignUp
@@ -19,8 +19,6 @@
 - JWT validation on each Authorized Request 
 #### ( Below Feature is works only in Local Environment as Vercel Don't allow write operation in free plan so CV are unable to saved but works fine in local App ) 
 - View or download Applicant CV's 
-
-
 
 ## Tech
 - Nextjs
