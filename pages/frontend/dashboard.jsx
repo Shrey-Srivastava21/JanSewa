@@ -73,7 +73,6 @@ export default function Dashboard() {
                   <GiSuitcase className='bg-gray-50 text-indigo-600 rounded-full w-10 h-10' />
                   <div className='flex  flex-col mx-2 items-start justify-start px-2 '>
                     <p className='text-xl font-semibold'>Total Applied</p>
-                    <p className='text-lg font-semibold'>50+</p>
                   </div>
                 </div>
 
@@ -82,7 +81,6 @@ export default function Dashboard() {
                   <BsFillBookmarkStarFill className='bg-gray-50 text-indigo-600 rounded-full w-10 h-10' />
                   <div className='flex  flex-col items-start mx-2 justify-start px-2 '>
                     <p className='text-xl font-semibold'>Save Jobs</p>
-                    <p className='text-lg font-semibold'>50+</p>
                   </div>
                 </div>
 

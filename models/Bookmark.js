@@ -1,6 +1,4 @@
 import mongoose from 'mongoose';
-import User from './User';
-import Job from './Job'
 
 const bookMarkSchema = new mongoose.Schema({
 
@@ -16,6 +14,7 @@ const bookMarkSchema = new mongoose.Schema({
 
 },{timestamps: true});
 
-const bookMarkJob =  mongoose.models.BookMarkJob || mongoose.model('BookMarkJob', bookMarkSchema);
+mongoose.models = {};
+const bookMarkJob = mongoose.model('BookMarkJob', bookMarkSchema);
 
 export default bookMarkJob;

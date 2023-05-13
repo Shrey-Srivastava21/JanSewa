@@ -13,8 +13,6 @@ export default function SavedJobDataTable() {
 
     const [Data, setData] = useState([]);
 
-    
-
 
     useEffect(() => {
         setData(bookMarkJobData)
@@ -30,30 +28,45 @@ export default function SavedJobDataTable() {
 
 
     const columns = [
-        {
-            name: 'Apply Date',
-            selector: row => new Date(`${row?.job?.createdAt}`).toLocaleDateString('en-GB'),
-        },
-        {
-            name: 'Company',
-            selector: row => row?.job?.company,
-        },
-        {
-            name: 'Job title',
-            selector: row => row?.job?.title,
-        },
-        {
-            name: 'Job Salary ',
-            selector: row => '$' + row?.job?.salary,
-        },
-        {
-            name: 'Action',
-            cell: row => <button onClick={() => handleDelete(row?._id)} className='md:px-2 md:py-2 px-1 py-1 text-xl text-red-600 hover:text-white my-2 hover:bg-red-600 border border-red-600   rounded transition-all duration-700  '><AiFillDelete/></button>
-        },
-        {
-            name: '',
-            cell: row => <button onClick={() => router.push(`/frontend/jobDetails/${row?.job?._id}`)} className='md:px-2 md:py-2 px-1 py-1 text-xs text-indigo-600 hover:text-white my-2 hover:bg-indigo-600 border border-indigo-600   rounded transition-all duration-700  '>view Detail</button>,
-        },
+      {
+        name: "Apply Date",
+        selector: (row) =>
+          new Date(`${row?.job?.createdAt}`).toLocaleDateString("en-GB"),
+      },
+      {
+        name: "Employer Name",
+        selector: (row) => row?.job?.company,
+      },
+      {
+        name: "Job title",
+        selector: (row) => row?.job?.title,
+      },
+      {
+        name: "Job Salary ",
+        selector: (row) => "₹" + row?.job?.salary,
+      },
+      {
+        name: "Action",
+        cell: (row) => (
+          <button
+            onClick={() => handleDelete(row?._id)}
+            className="md:px-2 md:py-2 px-1 py-1 text-xl text-red-600 hover:text-white my-2 hover:bg-red-600 border border-red-600   rounded transition-all duration-700  "
+          >
+            <AiFillDelete />
+          </button>
+        ),
+      },
+      {
+        name: "",
+        cell: (row) => (
+          <button
+            onClick={() => router.push(`/frontend/jobDetails/${row?.job?._id}`)}
+            className="md:px-2 md:py-2 px-1 py-1 text-xs text-indigo-600 hover:text-white my-2 hover:bg-indigo-600 border border-indigo-600   rounded transition-all duration-700  "
+          >
+            View Details
+          </button>
+        ),
+      },
     ];
 
 

@@ -49,7 +49,7 @@ export default function Intro() {
           </div>
         </div>
         <div className='w-3/6 my-2 h-full bg-gray-200 hidden items-center justify-center flex-col p-20 lg:flex'>
-          {/* <Image width={600} height={700} src="/intro.png" alt="no-image-found" /> */}
+          <Image width={1000} height={1000} src="/intro.png" alt="no-image-found" />
         </div>
       </div>
       {

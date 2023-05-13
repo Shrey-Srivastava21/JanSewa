@@ -26,7 +26,7 @@ const getPostedJobs =  async (req, res) => {
     if(!id) return res.status(400).json({ success: false, message: "Please Login" })
 
     try {
-        const gettingjobs = await Job.find({user : id}).populate('user', 'name email');
+        const gettingjobs = await Job.find({user : id}).populate('user');
         return res.status(200).json({ success: true, data: gettingjobs })
     } catch (error) {
         console.log('Error in getting a specifed Job job (server) => ', error);
