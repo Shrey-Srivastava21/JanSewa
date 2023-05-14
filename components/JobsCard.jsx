@@ -5,7 +5,6 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 import { useRouter } from 'next/router'
 
 export default function JobsCard({ job, posted }) {
-    console.log("JOB: ", job);
     const router = useRouter();
     return (
       <div

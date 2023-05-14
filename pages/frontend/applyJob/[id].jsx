@@ -48,7 +48,7 @@ export default function ApplyJob() {
         }
 
         if (!file) {
-            setError({ ...error, cv: "Please Upload CV" })
+            setError({ ...error, cv: "Please Upload Aadhar Card" })
             return;
         }
 
