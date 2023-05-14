@@ -91,7 +91,10 @@ export default function JobDetails() {
                 <div className="flex w-full px-8 md:px-20 items-start md:flex-row flex-col md:justify-between justify-center">
                   <div className="flex mb-1 items-center justify-center">
                     <Image
-                      src={"https://xsgames.co/randomusers/avatar.php?g=male"}
+                      src={
+                        JobDetails?.user?.image ||
+                        "https://xsgames.co/randomusers/avatar.php?g=male"
+                      }
                       alt="no-image"
                       className="rounded-full mb-2"
                       width={100}
@@ -254,6 +257,7 @@ export default function JobDetails() {
                               height={70}
                               className="flex rounded-full mb-4 md:mb-0"
                               src={
+                                JobDetails?.user?.image ||
                                 "https://xsgames.co/randomusers/avatar.php?g=male"
                               }
                               alt="no image"
@@ -270,16 +274,16 @@ export default function JobDetails() {
                           <div className="flex flex-col px-1 md:px-4 py-6 items-start justify-center">
                             <div className="flex px-1 md:px-4 items-center justify-start mb-2">
                               <BsBriefcaseFill className="text-base font-semibold text-indigo-600" />
-                              <p className="font-semibold text-xs md:text-base mx-1">
+                              <p className="font-semibold text-xs md:text-base mx-1 w-28">
                                 Job Type{" "}
                               </p>
-                              <p className="text-sm text-gray-800 mx-1">
+                              <p className="text-sm text-gray-800 mx-1 capitalize">
                                 {item?.job_type}
                               </p>
                             </div>
                             <div className="flex px-1 md:px-4 items-center justify-center mb-2">
                               <AiOutlineDollarCircle className="text-base font-semibold text-indigo-600" />
-                              <p className="font-semibold text-xs md:text-base mx-1">
+                              <p className="font-semibold text-xs md:text-base mx-1 w-28">
                                 Salary{" "}
                               </p>
                               <p className=" text-sm text-gray-800 mx-1">
@@ -288,7 +292,7 @@ export default function JobDetails() {
                             </div>
                             <div className="flex px-1 md:px-4 items-center justify-center mb-2">
                               <RiUserSearchFill className="text-base font-semibold text-indigo-600" />
-                              <p className="font-semibold text-xs md:text-base mx-1">
+                              <p className="font-semibold text-xs md:text-base mx-1 w-28">
                                 Total Vacancies{" "}
                               </p>
                               <p className=" text-sm text-gray-800 mx-1">
@@ -297,7 +301,7 @@ export default function JobDetails() {
                             </div>
                             <div className="flex px-1 md:px-4 items-center justify-center mb-2">
                               <BsFillCalendar2DateFill className="text-base font-semibold text-indigo-600" />
-                              <p className="font-semibold text-xs md:text-base mx-1">
+                              <p className="font-semibold text-xs md:text-base mx-1 w-28">
                                 Dead Line
                               </p>
                               <p className=" text-xs text-gray-800 mx-1">
@@ -311,7 +315,7 @@ export default function JobDetails() {
                             onClick={() =>
                               router.push(`/frontend/jobDetails/${item?._id}`)
                             }
-                            className="my-2 py-2 px-4  border border-indigo-600 uppercase  rounded flex items-center justify-center transition-all duration-700 hover:bg-indigo-600 hover:text-white text-indigo-600 font-semibold"
+                            className="mx-6 my-2 py-2 px-4  border border-indigo-600 uppercase  rounded flex items-center justify-center transition-all duration-700 hover:bg-indigo-600 hover:text-white text-indigo-600 font-semibold"
                           >
                             View Detail
                             <AiOutlineArrowRight className="mx-2 text-xl" />
@@ -320,8 +324,6 @@ export default function JobDetails() {
                       );
                     })
                   )}
-
-                  {/* card */}
                 </div>
               </div>
             </div>
