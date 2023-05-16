@@ -22,12 +22,12 @@ export default function PostAJob() {
 
 
         if (!formData.title) {
-            setError({ ...error, title: "title Field is required" })
+            setError({ ...error, title: "Title Field is required" })
             return;
         }
 
         if (!formData.salary) {
-            setError({ ...error, salary: "salary Field is required" })
+            setError({ ...error, salary: "Salary Field is required" })
             return;
         }
 
@@ -38,27 +38,27 @@ export default function PostAJob() {
 
 
         if (!formData.company) {
-            setError({ ...error, company: "company Field is required" })
+            setError({ ...error, company: "Organization Field is required" })
             return;
         }
         if (!formData.description) {
-            setError({ ...error, description: "description Field is required" })
+            setError({ ...error, description: "Description Field is required" })
             return;
         }
         if (!formData.job_category) {
-            setError({ ...error, job_category: "job_category Field is required" })
+            setError({ ...error, job_category: "Job_category Field is required" })
             return;
         }
         if (!formData.job_type) {
-            setError({ ...error, job_type: "job_type Field is required" })
+            setError({ ...error, job_type: "Job_type Field is required" })
             return;
         }
         if (!formData.job_experience) {
-            setError({ ...error, job_experience: "job_experience Field is required" })
+            setError({ ...error, job_experience: "Job_experience Field is required" })
             return;
         }
         if (!formData.job_vacancy) {
-            setError({ ...error, job_vacancy: "job_vacancy Field is required" })
+            setError({ ...error, job_vacancy: "Job_vacancy Field is required" })
             return;
         }
         if (!formData.job_deadline) {
@@ -124,8 +124,8 @@ export default function PostAJob() {
                         }
                     </div>
                     <div className='w-full mb-4  flex flex-col items-start justify-center'>
-                        <label htmlFor="company" className='mb-1 text-base font-semibold'>Company :</label>
-                        <input onChange={(e) => setFormData({ ...formData, company: e.target.value })} type="text" id='company' className='w-full py-2 px-3 mb-2 border border-indigo-600 rounded' placeholder='Enter Company of job' />
+                        <label htmlFor="company" className='mb-1 text-base font-semibold'>Organization Name :</label>
+                        <input onChange={(e) => setFormData({ ...formData, company: e.target.value })} type="text" id='company' className='w-full py-2 px-3 mb-2 border border-indigo-600 rounded' placeholder='Enter Organization name' />
                         {
                             error.company && <p className="text-sm text-red-500">{error.company}</p>
                         }
