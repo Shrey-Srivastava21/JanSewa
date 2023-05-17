@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux'
 import { setUserToken, setUserData } from '@/Utils/UserSlice'
 import { useEffect } from 'react'
 import Cookies from 'js-cookie'
-import { toast } from 'react-toastify'
 import useSWR from 'swr'
 import { get_job } from '@/Services/job'
 import { setJobData } from '@/Utils/JobSlice'
@@ -16,6 +15,8 @@ import { InfinitySpin } from 'react-loader-spinner'
 export default function Home() {
   const dispatch = useDispatch();
   const token = Cookies.get('token');
+
+  console.log("TOKEN: ", token);
 
 
   const { data, error, isLoading } = useSWR('/getAllJobs', get_job)
@@ -46,7 +47,7 @@ export default function Home() {
         <meta name="description" content="Search and apply for the latest jobs in your field. Explore opportunities from top companies and make your career dreams come true." />
         <meta name="keywords" content="job portal, job search, career opportunities, employment, job listings, job openings, job vacancies, job postings, hiring, recruitment" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://janseva.vercel.app/" />
+        <link rel="canonical" href="https://jansewa.vercel.app/" />
         <meta name="author" content="Janseva_Team" />
         <meta property="og:title" content="Find Your Dream Job | Job Portal Name" />
         <meta name="twitter:title" content="Find Your Dream Job | Job Portal Name" />

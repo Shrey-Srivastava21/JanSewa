@@ -42,12 +42,13 @@ export default function NgosCard({data}) {
             <p>{data.category}</p>
           </div>
         </div>
-        <button
+        <a
           href={data.link}
+          target="_blank"
           className="my-2 py-2 px-4  border border-indigo-600   rounded flex items-center justify-center transition-all duration-700 hover:bg-indigo-600 hover:text-white text-indigo-600 font-semibold"
         >
           More details <AiOutlineArrowRight className="mx-2 text-xl" />
-        </button>
+        </a>
       </div>
     </div>
   );

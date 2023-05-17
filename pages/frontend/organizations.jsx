@@ -1,6 +1,5 @@
 import React from 'react'
 import NavBar from '@/components/NavBar';
-import JobsCard from '@/components/JobsCard';
 import NgosCard from '@/components/NgoCard';
 import { SeedData } from '@/Utils/NgoData';
 
