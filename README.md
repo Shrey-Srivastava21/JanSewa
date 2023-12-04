@@ -6,7 +6,7 @@
 
  - don't forget to leave a star! :)
 
-## Features
+## Features🔥
 
 - SignIn / SignUp
 - Forget Password
@@ -30,6 +30,10 @@
 - Joi validation
 - MongoDB
 - SWR hooks for fetching API 
+
+<h3 align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+</h3>
 
 ## About Jansewa:
 
@@ -94,6 +98,9 @@ Dashboard to Monitor:
 2.	Notifications regarding job openings and application status will be sent to job seekers through the sms or email.
 3.	Skilled and unskilled workers looking for employment opportunities can register as job seekers/laborers through our portal. Once registered, employers who are also registered on the platform can filter job seekers in their city who are qualified for the job they need. This matching process allows for a streamlined connection between job seekers and employers, thus facilitating job opportunities without any educational literacy or gender boundaries.
 
+<h3 align="center">
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+</h3>
 
 ## Environment Variables
 
@@ -118,7 +125,24 @@ Install my-project with npm
 ```
     
     
+## Need help?
 
+
+Feel free to contact me on \
+<a href = "https://www.linkedin.com/in/shrey-srivastava-591bb21bb" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;<a href = "https://github.com/Shrey-Srivastava21" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
+
+---------
+
+```javascript
+
+if (youEnjoyed) {
+
+    starThisRepository();
+}
+
+```
+
+-----------
 
 
 
