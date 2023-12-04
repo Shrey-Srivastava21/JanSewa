@@ -26,7 +26,7 @@
 ## Tech and Tools🛠 
 - Nextjs
 - Tailwind CSS
-- Redux toolkit(for state management)
+- Redux Toolkit (for state management)
 - Joi validation
 - MongoDB
 - SWR hooks for fetching API 
